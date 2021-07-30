@@ -1,6 +1,5 @@
-package by.treekonn.moq
+package by.treekonn.moq.api
 
-import com.jakewharton.retrofit2.adapter.kotlin.coroutines.CoroutineCallAdapterFactory
 import okhttp3.Interceptor
 import okhttp3.OkHttpClient
 import retrofit2.Retrofit
@@ -35,8 +34,7 @@ object ApiFactory{
                 .client(tmdbClient)
                 .baseUrl("https://api.themoviedb.org/3/")
                 .addConverterFactory(MoshiConverterFactory.create())
-                .addCallAdapterFactory(CoroutineCallAdapterFactory())
-                .build()   
+                .build()
 
   
    val tmdbApi : TmdbApi = retrofit().create(TmdbApi::class.java)
