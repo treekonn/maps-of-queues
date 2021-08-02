@@ -5,7 +5,7 @@ apply plugin: 'kotlin-kapt'
 
 android {
     compileSdkVersion compile_sdk_version
-    buildToolsVersion "31.0.0"
+    buildToolsVersion build_tools_version
 
     defaultConfig {
         applicationId "by.treekonn.moq"
@@ -31,9 +31,10 @@ android {
         }
     }
 
+    buildFeatures.viewBinding true
     dexOptions.preDexLibraries true // TODO question what it is?
-    viewBinding.enabled = true
-//    viewBinding {
+
+//    buildFeatures.viewBinding {
 //        enabled = true
 //    }
     // TODO test compileOptions.sourceCompatibility
@@ -62,16 +63,20 @@ dependencies {
 //    implementation libs.fragment_ktx
 //    implementation libs.livedata_ktx
 
-    // Retrofit
+    // Retrofit (Network)
     implementation libs.retrofit
     implementation libs.retrofit_moshi
     // TODO remove from release
     // debug build
     implementation libs.okhttp_logging
 
-    // Glide
+    // Glide (Image downloader)
     implementation libs.glide
     kapt libs.glide_compiler
+
+    // Hilt (DI)
+    implementation libs.hilt
+    kapt libs.hilt_compiler
 
     // Test
     testImplementation libs.junit_ext

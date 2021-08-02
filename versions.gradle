@@ -39,7 +39,8 @@ libs.okhttp_logging = "com.squareup.okhttp3:logging-interceptor:4.2.1"
 libs.junit = "junit:junit:$versions.junit"
 libs.junit_ext = "androidx.test.ext:junit:$versions.junit_ext"
 libs.espresso = "androidx.test.espresso:espresso-core:$versions.espresso"
-
+libs.hilt ="com.google.dagger:hilt-android:$versions.hilt"
+libs.hilt_compiler ="com.google.dagger:hilt-android-compiler:$versions.hilt"
 
 def libs_classpath = [:]
 ext.libs_classpath = libs_classpath

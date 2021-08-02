@@ -3,7 +3,8 @@ buildscript {
     apply from: 'versions.gradle'
 
     ext {
-        compile_sdk_version = 31
+        compile_sdk_version = 30
+        build_tools_version = "30.0.2"
         min_sdk_version = 21
     }
 
