@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "461453512004",
+    "project_id": "queue-97509",
+    "storage_bucket": "queue-97509.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:461453512004:android:62cf9a1761bc5832575b11",
+        "android_client_info": {
+          "package_name": "by.treekonn.moq"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "461453512004-1fm4g3umthvlpdr4p18afho9huj95ikh.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBvWUAkTjCy3os2ecr95Qq2bpECZgDGlws"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "461453512004-1fm4g3umthvlpdr4p18afho9huj95ikh.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

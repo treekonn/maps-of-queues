@@ -17,6 +17,7 @@ buildscript {
         classpath libs_classpath.gradle
         classpath libs_classpath.kotlin
         classpath libs_classpath.hilt
+        classpath 'com.google.gms:google-services:4.3.8'
     }
 }
 

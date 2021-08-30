@@ -1,9 +1,11 @@
-package by.treekonn.moq
+package by.treekonn.moq.ui
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import by.treekonn.moq.databinding.ActivityMainBinding
+import dagger.hilt.android.AndroidEntryPoint
 
+@AndroidEntryPoint
 class MainActivity : AppCompatActivity() {
 
     private lateinit var binding: ActivityMainBinding
