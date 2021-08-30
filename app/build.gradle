@@ -3,7 +3,8 @@ plugins {
     id 'kotlin-android'
     id 'kotlin-android-extensions'
     id 'kotlin-kapt'
-    id 'com.google.gms.google-services'
+    id 'dagger.hilt.android.plugin'
+//    id 'com.google.gms.google-services'
 }
 
 android {
@@ -58,9 +59,10 @@ dependencies {
     implementation libs.constraintlayout
 
     // ktx libraries https://developer.android.com/kotlin/ktx
-//    implementation libs.activity_ktx
+    implementation libs.activity_ktx
 //    implementation libs.fragment_ktx
 //    implementation libs.livedata_ktx
+//    implementation "androidx.lifecycle:lifecycle-viewmodel-ktx:2.4.0-alpha03"
 
     // Retrofit (Network)
     implementation libs.retrofit
